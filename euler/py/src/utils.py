@@ -32,3 +32,58 @@ def timeitfy(fs: List[Callable], args, i: int=10) -> None:
     for f in fs:
         m += f'{f.__name__}={round(timeit(partial(f, *args), number=i), 2):.2f}s '
     print(MSG.format(m))
+
+
+# Commons
+
+def sieve_primes(x: int) -> list:
+    '''
+    Produce first [x] primes list based on ~Eratosthenes recipe.
+    '''
+    rec = []
+    for n in range(2, x+1):
+        for prime in rec:
+            if n % prime == 0: break
+        else:
+            rec.append(n)
+    return rec
+
+def sieve_primes_gen(x: int) -> list:
+    '''
+    Generate first [x] primes list based on ~Eratosthenes recipe.
+    '''
+    rec = []
+    for n in range(2, x+1):            
+        for prime in rec:              
+            if n % prime == 0: break   
+        else:
+            rec.append(n)
+            yield n                     
+
+def prime_factors(x: int) -> list: # of lists
+    '''
+    Produce prime factors aka prime decomposition of [x] numb.
+    '''
+    primes: list = sieve_primes(x)
+    rec = []
+    while x != 1:
+        for p in primes:
+            if x % p == 0:
+                rec.append(p); x = int(x/p)
+    return rec
+
+def factors(x: int):
+    '''
+    Produce all factors of considered [x] numb.
+    '''
+    rec = []
+    for n in range(1, x+1):
+        if x % n == 0:
+            rec.append(n)
+    return rec
+
+def is_prime(x: int):
+    '''
+    Test if given [x] numb belongs to the primes.
+    '''
+    return True if factors(x) == [1, x] else False
