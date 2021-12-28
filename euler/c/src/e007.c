@@ -16,8 +16,8 @@ int run_e7v1(int x) {
 }
 
 
-long solve_e7() {
-   /***
+int solve_e7() {
+    /**
     * 10001st
     * By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that
     * the 6th prime is 13.
@@ -27,8 +27,8 @@ long solve_e7() {
 }
 
 
-// int main() {
-//     promptify(solve_e7, 7);
-//  // >> the anwser for the #7 euler problem is >104743<; computed in 0.0141s ∎
-//     return 0;
-// }
+/** int main() {
+    promptify(solve_e7, 7);
+    // >> the anwser for the #7 euler problem is >104743<; computed in 0.0148s ∎
+    return 0;
+}*/

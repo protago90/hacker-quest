@@ -25,4 +25,4 @@ solverE1 = Solver 1 runE1 1000
 
 main = do
     promptify solverE1
- -- >> the anwser for the #1 euler problem is >233168<; computed in 0.000s ∎
+ -- >> the anwser for the #1 euler problem is >233168<; computed in 0.000s ∎ex

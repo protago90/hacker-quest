@@ -16,7 +16,7 @@ int run_e3v1(long x) {
 }
 
 
-long solve_e3() {
+int solve_e3() {
     /**
     * Largest prime factor
     * The prime factors of 13195 are 5, 7, 13 and 29.
@@ -26,8 +26,8 @@ long solve_e3() {
 }
 
 
-// int main() {
-//     promptify(solve_e3, 3);
-//     // >> the anwser for the #3 euler problem is >6857<; computed in 0.0069s ∎
-//     return 0;
-// }
+/** int main() {
+    promptify(solve_e3, 3);
+    // >> the anwser for the #3 euler problem is >6857<; computed in 0.0075s ∎
+    return 0;
+}*/

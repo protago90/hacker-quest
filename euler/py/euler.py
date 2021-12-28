@@ -3,7 +3,7 @@
 
 from argparse import ArgumentParser, Namespace
 from typing import Callable, List
-from src import *  # i.e. all solvers from src/E??.py
+from src import *  # i.e. all solvers from src/E*.py
 
 
 class Solver():

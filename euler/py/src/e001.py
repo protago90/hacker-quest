@@ -5,7 +5,7 @@ from src.utils import promptify
 
 
 def run_e1v1(x: int) -> int:
-   rec: int = 0
+   rec = 0
    for n in range(x):
       if n % 3 == 0 or n % 5 == 0: rec += n
    return rec

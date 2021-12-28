@@ -12,9 +12,9 @@ genProds x y = [n*m | n <- [x..y], m <- [n..y]]
 
 
 runE4 :: (Show a, Integral a, Integral b) => b -> a
-runE4 x = foldl (\acc i -> if p i acc then i else acc) 0 $ genProds t0 tn
-    where p n m  = isPolindrome n && n > m
-          (t0, tn) = (10^(x-1), 10^x)
+runE4 x = foldl (\acc prod -> if p prod acc then prod else acc) 0 $ genProds t0 tn
+    where p n m    = isPolindrome n && n > m
+          (t0, tn) = (10^(x-1), 10^x - 1)
 
 
 solverE4 = Solver 4 runE4 3

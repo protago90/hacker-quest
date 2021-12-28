@@ -17,8 +17,8 @@ int run_e6v1(int x) {
 }
 
 
-long solve_e6() {
-   /***
+int solve_e6() {
+    /**
     * Sum square difference
     * The sum of the squares of the first ten natural numbers is
     * 1^2 + 2^2 + ... + 10^2 = 385.
@@ -33,8 +33,8 @@ long solve_e6() {
 }
 
 
-// int main(){
-//     promptify(solve_e6, 6);
-//  // >> the anwser for the #6 euler problem is >25164150<; computed in 0.0001s ∎
-//     return 0;
-// }
+/** int main(){
+    promptify(solve_e6, 6);
+    // >> the anwser for the #6 euler problem is >25164150<; computed in 0.0000s ∎
+    return 0;
+}*/

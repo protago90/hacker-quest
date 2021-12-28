@@ -27,7 +27,7 @@ int run_e4v1(int x) {
 
 
 long solve_e4() {
-   /***
+    /**
     * Largest polindrome product
     * A palindromic number reads the same both ways. The largest palindrome made from
     * the product of two 2-digit numbers is 9009 = 91 × 99.
@@ -37,8 +37,8 @@ long solve_e4() {
 }
 
 
-// int main() {
-//     promptify(solve_e4, 4);
-//  // >> the anwser for the #4 euler problem is >906609<; computed in 0.0111s ∎
-//     return 0;
-// }
+/** int main() {
+    promptify(solve_e4, 4);
+    // >> the anwser for the #4 euler problem is >906609<; computed in 0.0111s ∎
+    return 0;
+}*/

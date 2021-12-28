@@ -3,7 +3,7 @@
 #include "utils.h"
 #include <math.h>
 
-#include <stdio.h>
+
 
 int run_e9v1(int x) {
     int lim = x/2;
@@ -19,7 +19,7 @@ int run_e9v1(int x) {
 }
 
 
-long solve_e9() {
+int solve_e9() {
    /***
     * Special Pythagorean triplets
     * A Pythagorean triplet is a set of three natural numbers, a < b < c, for which
@@ -31,8 +31,8 @@ long solve_e9() {
 }
 
 
-// int main() {
-//     promptify(solve_e9, 9);
-//  // >> the anwser for the #9 euler problem is >31875000<; computed in 0.0055s ∎
-//     return 0;
-// }
+/** int main() {
+    promptify(solve_e9, 9);
+    // >> the anwser for the #9 euler problem is >31875000<; computed in 0.0054s ∎
+    return 0;
+}*/

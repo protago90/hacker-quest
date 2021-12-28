@@ -27,7 +27,7 @@ NUMB = ('73167176531330624919225119674426574742355349194934'
 
 
 def run_e8v1(x: int) -> int:
-    rec = 1
+    rec = 0
     for i in range(0, len(NUMB)-x):
         p = reduce(lambda m, n: m*n, (int(d) for d in NUMB[i:i+x]))
         if p > rec:
@@ -49,7 +49,7 @@ def solve_e8() -> int:
 
 if __name__ == '__main__':
     solve_e8()
-    # >> the anwser for the #8 euler problem is >23514624000<; computed in 0.0037s ∎
+    # >> the anwser for the #8 euler problem is >23514624000<; computed in 0.0035s ∎
 
     # from src.utils import timeitfy
     # timeitfy([run_e8v1], args=[13], i=10000)

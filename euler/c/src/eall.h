@@ -1,7 +1,7 @@
 // by protago90
 
-#ifndef  SOLVERS_H
-#define  SOLVERS_H
+#ifndef _SOLVERS_H
+#define _SOLVERS_H
 
     long solve_e1();
     long solve_e2();

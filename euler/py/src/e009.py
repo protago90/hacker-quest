@@ -28,7 +28,7 @@ def solve_e9() -> int:
 
 if __name__ == '__main__':
     solve_e9()
-    # >> the anwser for the #9 euler problem is >31875000<; computed in 0.0509s ∎
+    # >> the anwser for the #9 euler problem is >31875000<; computed in 0.0424s ∎
 
     # from src.utils import timeitfy
     # timeitfy([run_e1v1], args=[1000], i=10000)

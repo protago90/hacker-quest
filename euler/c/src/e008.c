@@ -42,7 +42,7 @@ long run_e8v1(int x) {
 
 
 long solve_e8() {
-   /***
+    /**
     * Largest product in a series
     * The four adjacent digits in the 1000-digit number that have the greatest product
     * are 9 × 9 × 8 × 9 = 5832.
@@ -52,8 +52,8 @@ long solve_e8() {
     return run_e8v1(13);
 }
 
-// int main() {
-//     promptify(solve_e8, 8);
-//  // >> the anwser for the #8 euler problem is >23514624000<; computed in 0.0000s ∎
-//     return 0;
-// }
+/** int main() {
+    promptify(solve_e8, 8);
+    // >> the anwser for the #8 euler problem is >23514624000<; computed in 0.0000s ∎
+    return 0;
+}*/

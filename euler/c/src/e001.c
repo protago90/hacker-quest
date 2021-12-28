@@ -13,7 +13,7 @@ int run_e1v1(int x) {
 }
 
 
-long solve_e1() {
+int solve_e1() {
     /**
     * Multiples of 5 and 3
     * If we list all the natural numbers below 10 that are multiples of 3 or 5,
@@ -24,8 +24,8 @@ long solve_e1() {
 }
 
 
-// int main() {
-//     promptify(solve_e1, 1);
-//     // >> the anwser for the #1 euler problem is >233168<; computed in 0.0000s ∎
-//     return 0;
-// }
+/** int main() {
+    promptify(solve_e1, 1);
+    // >> the anwser for the #1 euler problem is >233168<; computed in 0.0000s ∎
+    return 0;
+}*/

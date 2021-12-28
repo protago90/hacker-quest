@@ -14,9 +14,9 @@ def run_e2v1(x: int) -> int:
 
 def run_e2v2(x: int, f: int=1, fn: int=2) -> int:
     if f > x: return 0
+    inc = f if f % 2 == 0 else 0
     fn, f = fn + f, fn
-    e = f if f % 2 == 0 else 0
-    return e + run_e2v2(x, f, fn)
+    return inc + run_e2v2(x, f, fn)
 
 
 @promptify

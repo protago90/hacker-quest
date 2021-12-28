@@ -58,17 +58,16 @@ int is_prime(long x) {
     if ((x < 2) | (x > 2 & x % 2 == 0)) { 
         return 0; 
     }
-    // ver1
+    // ver 1
     long lim = sqrt(x);
     long n = 3;
     for (n; n <= lim; n += 2) {
         if (x % n == 0) { return 0; } 
     }
     return 1;
-    // ver2 --slowish
-    // long rec[LIM]; 
-    // // ? = malloc(LIM*sizeof(*rec));
+    // ver 2 --slowish
+    // long rec[LIM];  // or? malloc(LIM*sizeof(*rec))
     // factors(x, rec);
     // if (rec[0] == 1 & rec[1] == x) { return 1; }
-    // return 0;
+    // return 0; */
 }

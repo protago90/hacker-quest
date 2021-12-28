@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "utils.h"
-#include "eall.h"  // i.e. all solvers from src/E??.c
+#include "eall.h"  // i.e. all solvers from src/E*.c
 
 
 void run_solver(int n) {

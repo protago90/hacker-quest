@@ -28,7 +28,7 @@ def solve_e4() -> int:
 
 if __name__ == '__main__':
     solve_e4()
-    # >> the anwser for the #4 euler problem is >906609<; computed in 0.2008s ∎
+    # >> the anwser for the #4 euler problem is >906609<; computed in 0.2108s ∎
 
     # from src.utils import timeitfy
     # timeitfy([run_e4v1], args=[3], i=10000)

@@ -15,7 +15,7 @@ long run_e10v1(int x) {
 
 
 long solve_e10() {
-   /***
+    /**
     * Summation of primes
     * The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
     * > Find the sum of all the primes below two million.
@@ -24,8 +24,8 @@ long solve_e10() {
 }
 
 
-// int main() {
-//     promptify(solve_e10, 10);
-//  // >> the anwser for the #10 euler problem is >142913828922<; computed in 0.5873s ∎
-//     return 0;
-// }
+/** int main() {
+    promptify(solve_e10, 10);
+    // >> the anwser for the #10 euler problem is >142913828922<; computed in 0.5873s ∎ 
+    return 0;
+}*/

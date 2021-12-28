@@ -1,7 +1,7 @@
 -- by protago90
 
 import Src.Utils (promptify, Solver)
-import Src.EALL  -- i.e. all solvers from src/E??.hs
+import Src.EALL  -- i.e. all solvers from src/E*.hs
 import System.Environment   
 
 

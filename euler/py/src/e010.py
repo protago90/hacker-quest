@@ -1,10 +1,16 @@
 #!/usr/bin/env python
 # by protago90
 
-from src.utils import promptify, sieve_primes_gen
+from src.utils import is_prime, promptify, sieve_primes_gen
 
 
-def run_e10v1(x: int, lim: int=10**7) -> int:
+def run_e10v1(x: int) -> int:
+    rec = 0
+    for n in range(x):
+        if is_prime(n): rec += n
+    return rec
+
+def run_e10v2(x: int, lim: int=10**7) -> int:  # awkwardly slow
     rec = 0
     for p in sieve_primes_gen(lim):
         if p < x:
@@ -24,7 +30,7 @@ def solve_e10() -> int:
 
 if __name__ == '__main__':
     solve_e10()
-    # >> the anwser for the #10 euler problem is >142913828922<; computed in 615.9240s ∎
+    # >> the anwser for the #10 euler problem is >142913828922<; computed in 5.4386s ∎
 
     # from src.utils import timeitfy
     # timeitfy([run_e10v1], args=[100000], i=1)
