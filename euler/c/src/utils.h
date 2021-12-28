@@ -1,8 +1,15 @@
 // by protago90
 
-#ifndef UTILS_H
-#define UTILS_H
+#ifndef _UTILS_H
+#define _UTILS_H
 
-void promptify(int (*solver)(), char n);
+ #define LIM 1000000
+ #define MAX(x, y) (((x) > (y)) ? (x) : (y))
+
+    void promptify(long (*solver)(), int n);
+
+     int is_prime(long x);
+    void factors(long x, long *rec);
+    void prime_factors(int x, int *rec);
 
 #endif
